@@ -1,254 +1,122 @@
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
 }
 
 header .logo {
-    font-size: 1.5em;
-    font-weight: bold;
+  font-size: 1.5em;
 }
 
 header nav ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 header nav ul li {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 header nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
-/* Hero Section */
 .hero {
-    height: 80vh;
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
+  height: 80vh;
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
 }
 
 .hero h1 {
-    font-size: 3em;
+  font-size: 3em;
+  margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 1.2em;
-    margin: 10px 0;
+.hero button.explore-btn {
+  padding: 10px 20px;
+  background: #0077b5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
 }
 
-.hero button {
-    padding: 10px 20px;
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
+.hero button.explore-btn:hover {
+  background: #005a8c;
 }
 
-/* About Us Section */
-
-
-
-/* Services, Gallery, and Contact Sections */
-.services, .gallery, .contact, .location, .about, .reviews {
-    padding: 40px;
-    text-align: center;
+section {
+  padding: 40px;
+  text-align: center;
 }
 
-.services h2, .gallery h2, .contact h2, .location h2 , .about h2, .reviews h2{
-    font-size: 2em;
-    margin-bottom: 20px;
+.about h2, .services h2, .gallery h2, .contact h2, .reviews h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.service-container, .gallery-container, .about-container, .reviews-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.service-container, .gallery-container, .reviews-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.service-box, .gallery-item, .about-box, .review-box {
-    width: 30%;
-    margin: 10px;
-    padding: 20px;
-    background: #f4f4f4;
-    border-radius: 8px;
+.service-box, .gallery-image, .review-box {
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 8px;
 }
 
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+.social-media-links a {
+  color: #333;
+  font-size: 1.5em;
+  margin: 0 10px;
+  transition: color 0.3s;
 }
 
-.contact p, .location p, .reviews p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+.social-media-links a:hover {
+  color: #0077b5;
 }
 
-/* Social Media */
-.social-media {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 10px;
+footer {
+  background: #333;
+  color: whitesmoke;
+  padding: 20px;
+  text-align: center;
 }
 
-.social-media a {
-    color: #333;
-    font-size: 1.2em;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.social-media a:hover {
-    color: #0077b5;
-}
-
-.social-media i {
-    margin-right: 8px;
-}
-
-/* Optional: Add a subtle animation for a touch of elegance */
-.about-content {
-    animation: fadeInUp 1.2s ease-in-out;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Location Section */
-.location {
-    background-color: #f4f4f4;
-    padding: 40px;
-}
-
-.location h2 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.location p {
-    font
-
-
-    /* Customer Reviews Section */
-.reviews {
-    padding: 40px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.reviews h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.reviews-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.review-box {
-    width: 30%;
-    padding: 20px;
-    margin: 10px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.review-box p {
-    font-size: 1em;
-    font-style: italic;
-    color: #555;
-}
-
-.review-box span {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #333;
-}
-
-    @media (max-width: 600px) {
-    /* Adjust font sizes, layout, padding, margins */
-    body {
-        font-size: 16px;
-        padding: 10px;
-    }
-    .container {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    /* Any other adjustments for mobile */
-}
 @media (max-width: 768px) {
-    /* Adjust styles for tablets and smaller screens */
-    .container {
-        padding: 10px;
-    }
-    h1 {
-        font-size: 1.5rem;
-    }
-}
+  .service-box, .gallery-image, .review-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-    h2 {
-    font-size: 1.6rem; /* Adjust as needed */
-    font-weight: bold;
-    margin-top: 20px;
-    color: #333;
-}
-
-    .section-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+  header, footer {
     padding: 10px;
-}
-
-    @media (max-width: 768px) {
-    h2 {
-        font-size: 1.4rem;
-    }
-    .section-container {
-        padding: 5px;
-    }
-    .collection-item {
-        min-width: 120px;
-    }
+  }
 }
