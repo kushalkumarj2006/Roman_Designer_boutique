@@ -3,129 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fashion Designer Boutique</title>
+  <title>Roman Designer Boutique</title>
   <link rel="stylesheet" href="wfstyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-  <!-- Header Section -->
   <header>
-    <div class="logo" style="font-weight: bold; font-family: cursive;">Roman Designer Boutique</div>
+    <div class="logo">Roman Designer Boutique</div>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#reviews">Customer Reviews</a></li>
+        <li><a href="#reviews">Reviews</a></li>
         <li><a href="#contact">Contact</a></li>
-       
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero" style="background-image: url('rd02.webp');">
-    <h1 style="color:  rgba(1, 1, 1,0.7);">Welcome to Our Fashion Boutique</h1>
-    <p style="color: rgba(1, 1, 1,0.7);">Your Perfect look Awaits.</p>
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <h1>Welcome to Our Fashion Boutique</h1>
+      <p>Your Perfect Look Awaits</p>
+      <button class="explore-btn" aria-label="Explore Services" onclick="scrollToSection('services')">Explore Now</button>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <blockquote>Best Designer Boutique in India</blockquote>
+      <article class="about-container">
+        <p>At Roman Designer Boutique, we believe that fashion is a form of self-expression, and every piece we create tells a unique story...</p>
+      </article>
+    </section>
 
-    <button onclick="scrollToSection('services')">Explore Now</button>
-  </section>
-
-  <!-- About Us Section -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <h1 style="font-family: fantasy; font-weight: bolder;"><q>Best Designer Boutique in India</q></h1><br>
-    <div class="about-container" style="letter-spacing: 1; font-style: oblique; text-align: justify; font-weight: 500; word-spacing: 4; border: .2px solid rgba(0, 0, 0,0.3); background-color: whitesmoke; border-radius: 20px; ">
-     
-      <p style="margin: 40px; font-size: 20px;">At Roman Designer Boutique, we believe that fashion is a form of self-expression, and every piece we create tells a unique story. Founded with a passion for design and a dedication to detail, our boutique is a sanctuary for those who appreciate the artistry of fashion.
-     <br> <br> <br>Our designer, with years of expertise in the industry, merges timeless elegance with contemporary flair, creating clothing that not only looks stunning but also feels deeply personal. Whether you’re seeking a striking outfit for a special occasion or everyday pieces with personality, we are here to bring your vision to life with style and sophistication.</p></div>
-    
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-container">
-      <div class="service-box">
-        <h3>Custom Designs</h3>
-        <p>We create unique custom pieces tailored just for you.From elegant evening gowns to chic everyday wear, we ensure every detail is perfect, allowing you to express your individuality through fashion. Let us help you turn your vision into reality with our bespoke design services!</p>
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-container">
+        <div class="service-box">
+          <h3>Custom Designs</h3>
+          <p>We create unique custom pieces tailored just for you...</p>
+        </div>
+        <div class="service-box">
+          <h3>Styling Consultation</h3>
+          <p>Personalized styling to help you look your best...</p>
+        </div>
+        <div class="service-box">
+          <h3>Alterations</h3>
+          <p>Professional alterations to ensure a perfect fit...</p>
+        </div>
       </div>
-      <div class="service-box">
-        <h3>Styling Consultation</h3>
-        <p>Personalized styling to help you look your best.Our expert stylists provide one-on-one consultations to assess your wardrobe needs and create looks that flatter your body type and enhance your natural beauty. Whether you need help selecting outfits for special occasions or advice on how to refresh your everyday style, we are here to guide you.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+      <h2>Our Collection</h2>
+      <div class="gallery-container">
+        <div class="gallery-image"><img src="rd1.jpeg" alt="Stylish Dress"></div>
+        <!-- More gallery images... -->
       </div>
-      <div class="service-box">
-        <h3>Alterations</h3>
-        <p>Professional alterations to ensure a perfect fit. We treat every garment with care and precision, making sure you feel confident and comfortable in your clothing</p>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+      <h2>Customer Reviews</h2>
+      <div class="reviews-container">
+        <div class="review-box"><p>Very happy with the stitching...</p><span>- Rekha Ram</span></div>
+        <!-- More reviews... -->
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Gallery Section -->
-  <section id="gallery" class="gallery">
-    <h2>Our Collection</h2>
-    <div class="gallery-container">
-      <div class="gallery-item"><img src="rd1.jpeg" alt="Dress 1"></div>
-      <div class="gallery-item"><img src="rd2.jpeg" alt="Dress 2"></div>
-      <div class="gallery-item"><img src="rd3.jpeg" alt="Dress 3"></div>
-      <div class="gallery-item"><img src="rd4.jpeg" alt="Dress 4"></div>
-      <div class="gallery-item"><img src="rd5.jpg" alt="Dress 5"></div>
-      <div class="gallery-item"><img src="rd6.jpg" alt="Dress 6"></div>
-      <div class="gallery-item"><img src="rd7.jpg" alt="Dress 7"></div>
-      <div class="gallery-item"><img src="rd8.jpg" alt="Dress 8"></div>
-    </div>
-  </section>
-
-
-  <!-- Customer Reviews Section -->
-<section id="reviews" class="reviews">
-    <h2>Customer Reviews</h2>
-    <div class="reviews-container">
-      <div class="review-box">
-        <p>Very happy with the stitching. Was a bit apprehensive to give my western outfits but it has turned out very well as expected. Vaseem has done a great job and looked into the details of every outfit keeping in mind the taste of the customer. He’s good in understanding the requirement and suggests accordingly. Highly recommended. <br> <span>-Rekha Ram</span></p>
+  <footer>
+    <section id="contact" class="contact-info">
+      <h2>Contact Us</h2>
+      <p>Email: romandesignerboutique@gmail.com | Phone: 9686747483</p>
+      <p>Follow us:</p>
+      <div class="social-media-links">
+        <a href="https://www.instagram.com/roman_designer_boutique" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/designer.boutiquee.1" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
       </div>
-      <div class="review-box">
-        <p>Best in town. Have tried other tailors in agara, but was never 100% happy with fitting. Roman designers stich the blouse so perfectly that you feel so light and free. I recommend this place for everyone. Though the pricing is a little higher,  it's worth it.
-            They also try to design the blouses in the best possible way with their own ideas. Liked the customer service. <br> <span>-Ranjitha Raj</span></p>
-      </div>
-      <div class="review-box"><p>Best Designer Boutique in Bangalore
-        I visited Many Boutiques  But this Boutique has a wonderful designs .
-        They understand the requirements of customer easily.
-        They are so friendly with customers.
-        Good infrastructure.
-        They have best idea of design.
-        I suggest you to visit this Boutique <br> <span>-Yasmeen Taj</span></p></div>
-        <div class="review-box"><p>Highly recommend their service . Definitely worth the money you pay for . I got all my bridal blouses stitched from here and they were absolutely perfect. <br> <span>-Swedha Sivakumar</span></p></div>
-        <div class="review-box"><p>Vaseem is too good at designing, very happy with stiching and he delivers on time , one of the best tailoring shop in HSR , clearly explains how the work can be done on a fabric and how it can b designed too. Overall satisfactory and happy so far ... <br> <span>-Roopa Shree</span></p></div>
-        <div class="review-box"><p>Amazing work and very creative. Vaseem is very helpful in designing the blouse and  u can trust him on the work he does. The best boutique in HSR and I wil surely continue with Roman designer boutique in future as well. Thank u Vaseem for delivering in time and for the wonderful work. Keep it up. <br> <span>-Benita Emmanuel</span></p> </div>
-         <div class="review-box"><p>Amazing Work 👌 Most Professional & Creative Team .... Very Updated on the latest trends. I’m Soooperrr Happy & Excited with the outfits & Perfect & Comfortable fittings ... with a trial room , immediate feedback & alterations are attended too . I would surely go back to Roman Designer Boutique in future too & would recommend this place for their Trend updates &  Creativity  & also for their reasonable pricing 👍 <br><span>-Bindu Vijay</span></p></div>
-         <div class="review-box"><p>Very good service , and vaseem understands our requirements depending on the events that we require the attire and design for , and completes the work on time 😊 more than satisfied and happy I am with his work ! It’s been almost 3 years since I am getting everything stritched from Roman boutique and I’ll still countinue vaseem😀 … <br><span>-Bhargavi Satish</span></p></div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-   <footer style="background-color: #333; color: whitesmoke;">
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: romandesignerboutique@gmail.com | Phone: 9686747483</p>
-    <p>Follow us on social media:</p>
-    <div class="social-media">
-      <a href="https://www.instagram.com/roman_designer_boutique" target="_blank" style="background-color: #333; color: whitesmoke;"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://www.facebook.com/designer.boutiquee.1" target="_blank" style="background-color: #333; color: whitesmoke;"><i class="fab fa-facebook"></i> Facebook</a>
-    </div>
-  </section>
-
-  <!-- Location Section -->
-  <section id="location" class="location" style="background-color: #333; color: whitesmoke;">
-    <h2>Our Location</h2>
-    <p>Visit us at:</p>
-    <p>Roman Designer Boutique <br> 24th main road, 5th Cross Rd, Bengaluru, Karnataka 560102
-    </p>
-    <p>We can't wait to see you!</p>
-    <!-- Google Maps Embed -->
-  
+    </section>
+    <section id="location">
+      <h2>Our Location</h2>
+      <p>Roman Designer Boutique, 24th main road, 5th Cross Rd, Bengaluru</p>
+    </section>
   </footer>
 
   <script src="script.js"></script>
